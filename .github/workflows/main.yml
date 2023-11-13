@@ -22,6 +22,8 @@ jobs:
       # step 3
       - name: Build and Deploy
         uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          publish_dir: ./build  # 指定要部署的文件夹路径
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
