@@ -1,7 +1,10 @@
 #reference： https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push] # 指定动作下 会运行 workflow
+on:
+  push:
+    branches:
+      - master # 指定动作下 会运行 workflow
 jobs:
   Explore-GitHub-Actions:
     name: My Job
@@ -21,9 +24,7 @@ jobs:
         uses: actions/checkout@master
       # step 3
       - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          publish_dir: ./build  # 指定要部署的文件夹路径
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
