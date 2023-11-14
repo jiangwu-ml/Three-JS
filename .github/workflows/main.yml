@@ -27,7 +27,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v3
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
+          BRANCH: master
           FOLDER: build
           BUILD_SCRIPT: npm install && npm run build
       - run: echo "🍏 This job's status is ${{ job.status }}."
