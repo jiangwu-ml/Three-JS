@@ -31,7 +31,6 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          ACCESS_TOKEN: ${{ secrets.REACT_WORKFLOW_TOKEN }}
           BRANCH: deploy-branch # The branch the action should deploy to.
           FOLDER: build # The folder the action should deploy.
 
