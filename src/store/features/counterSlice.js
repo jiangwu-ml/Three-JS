@@ -40,7 +40,7 @@ export const asyncIncrement = createAsyncThunk(
 export const asyncDecrement = createAsyncThunk(
   "counter/asyncDecrement",
   async (params, thunkAPI) => {
-    const { dispatch, getState } = thunkAPI;
+    const { dispatch } = thunkAPI;
     await new Promise(resolve => {
       setTimeout(() => {
         dispatch({ type: "counter/decrement" });
