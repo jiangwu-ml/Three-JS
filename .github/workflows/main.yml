@@ -25,6 +25,7 @@ jobs:
       # step 3
       - name: Install and Build 🔧
         run: |
+          npm install
           npm run build
        # step 4
       - name: Deploy 🚀
