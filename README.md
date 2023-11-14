@@ -45,4 +45,6 @@ reference: [link](https://docs.github.com/zh/pages/getting-started-with-github-p
 
 5、关于 ACCESS_TOKEN 的 生成、作用 、过期了怎么办、使用场景？
 
-### 三、使用场景
+### 三、细节点
+
+// "homepage": "https://jiangwu-ml.github.io/github-action-demo"

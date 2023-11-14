@@ -17,7 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages-deploy -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +41,5 @@
   "devDependencies": {
     "redux-devtools": "^3.7.0"
   },
-  "homepage": "https://jiangwu-ml.github.io/github-action-demo"
+  "homepage": "./"
 }
