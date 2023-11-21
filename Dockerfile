@@ -1,6 +1,7 @@
 FROM node:19-alpine
 WORKDIR /app
-COPY . .
-RUN yarn install
-CMD ["yarn", "start"]
+COPY package.json .
+RUN npm install
+COPY . ./
 EXPOSE 3000
+CMD ["npm", "start"]
