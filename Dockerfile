@@ -1,6 +1,7 @@
 FROM node:19-alpine
 WORKDIR /app
 COPY . .
-RUN npm install
+RUN npm i anywhere -g
+
 EXPOSE 3000
-CMD ["npm", "start"]
+CMD anywhere -p 3000 -d . -s

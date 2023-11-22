@@ -15,7 +15,7 @@ COPY . .
 RUN npm i anywhere -g
 
 EXPOSE 3000
-CMD anywhere -p 3000 -d . -s  //启动！✈️  注意： . 是当前路径的意思
+CMD anywhere -p 3000 -d . -s  //启动！✈️  注意： . 是当前路径的意思 /app下的路径
 ```
 
 - 4、执行 docker build xxxx
@@ -76,4 +76,4 @@ CMD anywhere -p 3000 -d ./build -s
 ```
 
 下图是使用前两种方式做的 images. 可以看出 build 后使用 anywhere 会缩小 images 的 size
-![Alt text](image.png)
+![Alt text](images/image-docker01.png)
