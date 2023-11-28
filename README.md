@@ -102,6 +102,11 @@ ref: [how to use-secrets-in-github-actions](https://docs.github.com/zh/actions/s
 
 ref: [how to open the rw permission to github-actions-for-a-repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository)
 
-### 三、
+##### 7、报错解决：main.xxx.js，即 build 后的资源文件获取时 404 + deploy 后 pages-build-deployment workflow 不自动执行。
 
-// "homepage": "https://jiangwu-ml.github.io/github-action-demo"
+如下图：路径里缺少 '/github-action-demo/' 导致的 404 问题。
+![Alt text](Images/image-404.png)
+
+解决方法：
+package.json 添加如下：
+"homepage": "https://jiangwu-ml.github.io/github-action-demo/"
