@@ -1,10 +1,10 @@
 #reference： https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html
 name: Deploy To Github Pages
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: Deploy To Github Pages 🚀
 on:
   push:
     branches:
-      - master1 # 指定动作下 会运行 workflow
+      - master # 指定动作下 会运行 workflow
 jobs:
   Explore-GitHub-Actions:
     name: My Job

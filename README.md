@@ -6,6 +6,8 @@
 
 [通过 github pages 部署的 md 文档的静态网页](https://jiangwu-ml.github.io/market/)
 
+[通过 gihub action 和 docker image 部署的 react 项目的网页](http://123.60.160.90:8089/)
+
 ### 一、是什么？
 
 1、github pages
