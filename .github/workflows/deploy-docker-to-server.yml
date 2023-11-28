@@ -41,14 +41,14 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }} #上一步所拿到的tags，默认是分支名字
           labels: ${{ steps.meta.outputs.labels }} # 上一步所拿到的labels
-      # step 6
-      # - name: ssh docker login    # 登陆云服务器
-      #   uses: appleboy/ssh-action@master
-      #   with:
-      #     host: ${{ secrets.HUAWEI_CLOUD_IP }} #云服务器的ip
-      #     username: ${{ secrets.HUAWEI_CLOUD_NAME }} #云服务器的用户名
-      #     password: ${{ secrets.HUAWEI_CLOUD_PASSWORD }} #云服务器的密码
-      #     script: cd ~ && sh deploy.sh ${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_PASSWORD }} #运行脚本
+      #step 6
+      - name: ssh docker login    # 登陆云服务器
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HUAWEI_CLOUD_IP }} #云服务器的ip
+          username: ${{ secrets.HUAWEI_CLOUD_NAME }} #云服务器的用户名
+          password: ${{ secrets.HUAWEI_CLOUD_PASSWORD }} #云服务器的密码
+          script: cd ~ && sh deploy.sh ${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_PASSWORD }} #运行脚本
 
 
 
