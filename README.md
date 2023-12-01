@@ -110,3 +110,5 @@ ref: [how to open the rw permission to github-actions-for-a-repository](https://
 解决方法：
 package.json 添加如下：
 "homepage": "https://jiangwu-ml.github.io/github-action-demo/"
+
+> 注意：加了 homepage ，github pages 上部署的不报错；云服务器部署的报错。不加 homepage , 云服务器上不报错；github pages 部署的报错。报错内容都是上图所示
