@@ -100,6 +100,9 @@ ref: [how to use-secrets-in-github-actions](https://docs.github.com/zh/actions/s
 
 ###### 6.3、not open the rw permission to github-actions for the repository
 
+指定项目 - settings - Actions - General -( Actions permissions + Workflow permissions )
+![alt text](Images/image_workfowPermission_permission.png)![Workflow Permission](Images/image_actionsPermission_permission.png)
+
 ref: [how to open the rw permission to github-actions-for-a-repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository)
 
 ##### 7、报错解决：main.xxx.js，即 build 后的资源文件获取时 404 + deploy 后 pages-build-deployment workflow 不自动执行。

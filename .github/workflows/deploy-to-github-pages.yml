@@ -4,7 +4,7 @@ run-name: Deploy To Github Pages 🚀
 on:
   push:
     branches:
-      - master0 # 指定动作下 会运行 workflow
+      - master # 指定动作下 会运行 workflow
 jobs:
   Explore-GitHub-Actions:
     name: My Job
